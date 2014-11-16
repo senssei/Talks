@@ -1,0 +1,18 @@
+<div class="row">
+  <div>
+    <p class="lead">{{questions[0].title}}</p>
+  </div>
+  <div>
+    <p>{{questions[0].text | limitTo:150}}</p>
+  </div>
+  <div class="row">
+    <div class="col-sm-8">
+      <a class="btn btn-xs btn-info">{{questions[0].tags[0]}}</a>
+      <a class="btn btn-xs btn-info">{{questions[0].tags[1]}}</a>
+    </div>
+    <div class="col-sm-4">
+      Asked by
+      <a class="">{{questions[0].author}}</a>
+    </div>
+  </div>
+</div>
