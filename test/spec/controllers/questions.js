@@ -17,6 +17,6 @@ describe('Controller: QuestionsCtrl', function () {
   }));
 
   it('should attach a list of questions to the scope', function () {
-    expect(scope.questions.length).toBe(1);
+    expect(scope.questions.length).toBe(2);
   });
 });
