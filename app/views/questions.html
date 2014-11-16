@@ -1,18 +1,18 @@
-<div class="row">
+<div class="row question" ng-repeat="question in questions">
   <div>
-    <p class="lead">{{questions[0].title}}</p>
+  <p class="lead"><a>{{question.title}}</a></p>
   </div>
   <div>
-    <p>{{questions[0].text | limitTo:150}}</p>
+    <p>{{question.text | limitTo:150}}</p>
   </div>
   <div class="row">
     <div class="col-sm-8">
-      <a class="btn btn-xs btn-info">{{questions[0].tags[0]}}</a>
-      <a class="btn btn-xs btn-info">{{questions[0].tags[1]}}</a>
+      <tags></tags>
     </div>
     <div class="col-sm-4">
       Asked by
-      <a class="">{{questions[0].author}}</a>
+      <img src="images/avt.png" alt="..." class="img-rounded">
+      <a class="">{{question.author}}</a>
     </div>
   </div>
 </div>
