@@ -15,6 +15,7 @@ describe('Directive: tags', function () {
   it('should make hidden element visible', inject(function ($compile) {
     element = angular.element('<tags></tags>');
     element = $compile(element)(scope);
-    expect(element.text()).toBe('this is the tags directive');
+
+    expect(element.length).toBe(1);
   }));
 });
