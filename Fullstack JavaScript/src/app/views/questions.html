@@ -1,0 +1,18 @@
+<div class="row question" ng-repeat="question in questions">
+  <div>
+  <p class="lead"><a>{{question.title}}</a></p>
+  </div>
+  <div>
+    <p>{{question.text | limitTo:150}}</p>
+  </div>
+  <div class="row">
+    <div class="col-sm-8">
+      <tags></tags>
+    </div>
+    <div class="col-sm-4">
+      Asked by
+      <img src="images/avt.png" alt="..." class="img-rounded">
+      <a class="">{{question.author}}</a>
+    </div>
+  </div>
+</div>
